@@ -1,16 +1,14 @@
 package org.spring.todolist.domain.todolist;
 
 import jakarta.persistence.*;
-import lombok.AccessLevel;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.spring.todolist.domain.todolist.types.StatusType;
 
 import java.time.LocalDate;
 
 @Entity
 @Getter
+@Setter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class TodoList {
   @Id
@@ -31,3 +29,5 @@ public class TodoList {
     this.startDate = startDate;
   }
 }
+
+
